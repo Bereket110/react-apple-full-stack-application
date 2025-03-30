@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Add New iPhone</h2>
+    <form
+      id="productForm"
+      action="http://localhost:2222/addiphones"
+      method="post"
+    >
+      <label>Image URL:</label>
+      <input type="text" id="img" name="img" required /><br />
+
+      <label>Product URL:</label>
+      <input type="text" id="url" name="url" required /><br />
+
+      <label>Product Name:</label>
+      <input type="text" id="title" name="title" required /><br />
+
+      <label>Brief Description:</label>
+      <textarea id="brief" name="brief" required></textarea><br />
+
+      <label>Full Description:</label>
+      <textarea id="Description" name="Description" required></textarea><br />
+
+      <label>Starting Price:</label>
+      <input
+        type="text"
+        id="startingprice"
+        name="startingprice"
+        required
+      /><br />
+
+      <label>Price Range:</label>
+      <input type="text" id="priceRange" name="priceRange" required /><br />
+
+      <button type="submit">Add iPhone</button>
+    </form>
+  </body>
+</html>
